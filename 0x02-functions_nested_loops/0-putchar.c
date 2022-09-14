@@ -1,7 +1,7 @@
 #include "master.h"
 
 /**
- * main - main entry
+ * master - master entry
  * Return: int
 */
 
