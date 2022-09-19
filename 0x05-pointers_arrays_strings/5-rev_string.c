@@ -2,18 +2,22 @@
 
 /**
  * rev_string - reverse a string
- * @s: char  array string type
+ * @s: char array string type
  */
 
-void puts2(char *str)
+void rev_string(char *s)
 {
-	int i = 0;
+	int i, c, l;
+	char h;
 
-	while (*(str + i) != '\0')
+	for (i = 0; s[i] != '\0'; i++)
+		;
+
+	l = i;
+	for (i--, c = 0; c < l / 2; i--, c++)
 	{
-		if (i % 2 == 0)
-			putchar(*(str + i));
-		i++;
+		h = s[c];
+		s[c] = s[i];
+		s[i] = h;
 	}
-	putchar(10);
-}	
+}
