@@ -3,7 +3,7 @@
 /**
  * puts2 - prints very other character in string
  * @str: pointer to string
- *
+ * Description: print first char, third char, then fifth..
  * Return: void
  */
 
