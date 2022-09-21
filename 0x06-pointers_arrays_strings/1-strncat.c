@@ -2,22 +2,22 @@
 
 /**
  * _strncat - concatenate two strings
- * @dest: string appeneded
- * @src: string to be completed
- * @n: integer parameter to compare the index
- * Return: new concatenated string
+ * @dest: string
+ * @src: string
+ * @n: number of elements to concatenate in
+ * Return: pointer to resulting `dest`
  */
 
-char *_strncat(chat *dest, char *src , int n);
+char *_strncat(char *dest, char *src, int n)
 {
-	
-	int index = 0, dest_len = 0;
+	int i, c;
 
-	while (dest[index++])
-		dest_len++;
+	for (i = 0; dest[i] != '\0'; i++)
+		;
 
-	for (index = 0; src[index] && index < n; index++)
-		dest[dest_len++] = src[index];
-
+	for (c = 0; src[c] != '\0' && n > 0; c++, n--, i++)
+	{
+		dest[i] = src[c];
+	}
 	return (dest);
-}	
+}
