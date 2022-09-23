@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * _strcmp - two strings compare
- * @s1: String
- * @s2: String
+ * _strcmp - Compare two strings
+ * @s1: string
+ * @s2: string
  * Return: negative int if s1 < s2, 0 if matching, and positive int if s1 > s2
  */
 
-int _strcmp(char *s1, char *s2);
+int _strcmp(char *s1, char *s2)
 {
 	int i;
 
